@@ -1,7 +1,7 @@
 import subprocess
 import os
 
-DATA = "/Users/malakabed/Desktop/CloudProject/data/yellow_tripdata_2025-01.parquet"
+DATA = "data/yellow_tripdata_2025-01.parquet"
 BASE_OUT = "./simulation_results"
 
 os.makedirs(BASE_OUT, exist_ok=True)
