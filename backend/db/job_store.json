@@ -1,0 +1,37 @@
+{
+  "7a676790-73ca-4c30-8770-2f525f3e0bd1": {
+    "job_id": "7a676790-73ca-4c30-8770-2f525f3e0bd1",
+    "dataset_id": "1b896542-fd2b-4f7e-ac76-04dd2a66e9eb",
+    "dataset_path": "/Users/malakabed/Desktop/CloudProject/backend/uploads/1b896542-fd2b-4f7e-ac76-04dd2a66e9eb__yellow_tripdata_2025-01.parquet",
+    "selected_jobs": [
+      "stats"
+    ],
+    "output_dir": "/Users/malakabed/Desktop/CloudProject/backend/outputs/7a676790-73ca-4c30-8770-2f525f3e0bd1",
+    "status": "failed",
+    "created_at": "2025-12-20T20:24:19.275071Z",
+    "started_at": "2025-12-20T20:24:19.275814Z",
+    "finished_at": "2025-12-20T20:24:19.324792Z",
+    "error": "/Library/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/malakabed/Desktop/CloudProject/backend/spark_stats_basic.py': [Errno 2] No such file or directory",
+    "results": {}
+  },
+  "84407aef-5408-4440-befa-87bfa2d903f7": {
+    "job_id": "84407aef-5408-4440-befa-87bfa2d903f7",
+    "dataset_id": "255eb6c0-ebef-4983-8bf9-9b39c3d6c5d7",
+    "dataset_path": "/Users/malakabed/Desktop/CloudProject/backend/uploads/255eb6c0-ebef-4983-8bf9-9b39c3d6c5d7__yellow_tripdata_2025-01.parquet",
+    "selected_jobs": [
+      "stats"
+    ],
+    "output_dir": "/Users/malakabed/Desktop/CloudProject/outputs/84407aef-5408-4440-befa-87bfa2d903f7",
+    "status": "done",
+    "created_at": "2025-12-20T20:32:14.917209Z",
+    "started_at": "2025-12-20T20:32:14.918242Z",
+    "finished_at": "2025-12-20T20:32:26.493333Z",
+    "error": null,
+    "results": {
+      "stats": {
+        "output_dir": "/Users/malakabed/Desktop/CloudProject/outputs/84407aef-5408-4440-befa-87bfa2d903f7/stats",
+        "log_tail": "\u2705 DONE\nRows: 3,475,226\nCols: 20\nDuration: 5.54 sec\nOutput folder: /Users/malakabed/Desktop/CloudProject/outputs/84407aef-5408-4440-befa-87bfa2d903f7/stats\n\nWARNING: Using incubator modules: jdk.incubator.vector\nUsing Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\n25/12/20 22:32:16 WARN Utils: Your hostname, Malaks-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 172.20.10.3 instead (on interface en0)\n25/12/20 22:32:16 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address\nUsing Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n25/12/20 22:32:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n\n[Stage 4:=============================>                             (4 + 4) / 8]\n\n[Stage 4:============================================>              (6 + 2) / 8]"
+      }
+    }
+  }
+}
