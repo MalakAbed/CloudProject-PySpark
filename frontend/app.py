@@ -2,8 +2,10 @@ import time
 import json
 import requests
 import streamlit as st
+import os
 
-BACKEND = "http://127.0.0.1:8000"
+BACKEND = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
+st.caption("Tip: set BACKEND_URL in Codespaces to your forwarded 8000 port URL")
 
 st.title("CloudProject (Upload → Spark → Results)")
 
@@ -85,4 +87,3 @@ if job_id:
     res = requests.get(f"{BACKEND}/results/{job_id}").json()
     st.json(res)
 
-    st.info("ملاحظة: النتائج محفوظة على جهازك داخل outputs/<job_id>/ على نفس جهاز الـ backend.")
