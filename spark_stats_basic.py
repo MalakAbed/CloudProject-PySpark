@@ -28,7 +28,19 @@ def main():
 
     start_time = time.time()
 
-    df = spark.read.parquet(args.input)
+    # df = spark.read.parquet(args.input)
+    input_path = args.input.lower()
+
+    if input_path.endswith(".csv"):
+        df = (
+            spark.read
+            .option("header", "true")
+            .option("inferSchema", "true")
+            .csv(args.input)
+        )
+    else:
+        df = spark.read.parquet(args.input)
+
 
     # 1) Row count
     row_count = df.count()
